@@ -1,0 +1,16 @@
+:root {
+  --white-text: #ffffff;
+  --white-text-op60: rgba(255, 255, 255, 0.6);
+  --black-text: #212121;
+  --blue-text: #2196f3;
+  --gray-text: #757575;
+
+  --back-white: #ffffff;
+  --back-light-white:#E5E5E5;
+  --back-light-gray: #F5F4FA; 
+  --back-dark: #2f303a;
+  --button-blue: #2196f3;
+} 
+
+Raleway 700
+Roboto 400 500 700 900

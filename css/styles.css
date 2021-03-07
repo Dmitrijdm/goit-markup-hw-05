@@ -1,0 +1,706 @@
+:root {
+  --white-text: #ffffff;
+  --white-text-op60: rgba(255, 255, 255, 0.6);
+  --black-text: #212121;
+  --blue-text: #2196f3;
+  --gray-text: #757575;
+
+  --back-white: #ffffff;
+  --back-light-gray: #e5e5e5;
+  --back-dark: #2f303a;
+  --button-blue: #2196f3;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  /* display: flex; */
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* хэдер!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.header-page {
+  background-color: var(--back-whit);
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  display: inline-block;
+
+  color: var(--blue-text);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.nav-logo span {
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+  padding-left: 0;
+}
+
+.nav-list li {
+  margin-right: 50px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  display: block;
+  padding: 32px 0;
+}
+
+.nav-link {
+  color: var(--black-text);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--blue-text);
+}
+
+.nav-link:focus {
+  color: var(--blue-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts li + li {
+  margin-left: 50px;
+}
+
+.contacts-link {
+  display: flex;
+  color: var(--gray-text);
+  padding: 32px 0;
+  align-items: center;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  fill: var(--blue-text);
+  color: var(--blue-text);
+  cursor: pointer;
+}
+
+.contacts-link:hover svg {
+  fill: var(--blue-text);
+  color: var(--blue-text);
+}
+
+/* .contacts-link:focus {
+  color: var(--blue-text);
+  fill: red;
+} */
+
+.contacts-link svg {
+  margin-right: 10px;
+  fill: var(--gray-text);
+}
+
+.letter {
+  fill: currentColor;
+  /* background-size: contain; */
+  /* background-color: lawngreen; */
+  margin-right: 10px;
+}
+
+/* секция герой!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.hero {
+  box-sizing: border-box;
+  /* background-color: var(--back-dark); */
+  padding-top: 200px;
+  padding-bottom: 198px;
+  text-align: center;
+  /* background-image: url(../images/hero-fon.jpg); */
+  /* background-size: 1600px 600px;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-fon.jpg);
+  background-color: var(--back-dark);
+}
+
+.hero-title {
+  width: 696px;
+  margin-top: 0px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--white-text);
+  font-weight: 900;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: var(--button-blue);
+  border: none;
+  color: var(--white-text);
+  height: 50px;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px 10px 32px;
+}
+
+.hero-btn-title {
+  display: flex;
+  height: 30px;
+  width: 136px;
+  align-items: center;
+}
+
+/* секция наши преимущества!!!!!!!!!!!!!!!!!!!!!!!! */
+.section {
+  background-color: var(--back-light-white);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.plus {
+  padding-top: 0px;
+}
+
+.section-advantages {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.advantages-item {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.premium {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--back-light-gray);
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.premium-svg {
+  width: 70px;
+  height: 70px;
+}
+
+.list-title {
+  color: var(--black-text);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.list-title-content {
+  color: var(--gray-text);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* убирает каждому 4-у элементу отступ справа */
+.advantages-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+/* Cекция, чем мы занимаемся!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* .section .list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+} */
+
+.section-title {
+  /* первый способ центровки */
+  width: 376px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  /*второй способ центровки */
+  /* text-align: center; */
+  color: var(--black-text);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* как обнулить вверхний маржин?
+.section .marg {
+  margin-top: 0px;
+} */
+
+.section-title-list {
+  display: flex;
+  /* flex-wrap: wrap; ?????????????????????????????????????*/
+  justify-content: space-around;
+}
+
+/* .section-title-list li {
+  margin-right: 30px;
+}
+убирает каждому 4-у элементу отступ справа
+.section-title-list li:nth-child(3n) {
+  margin-right: 0px;
+} */
+
+/* секция наша команда!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.team {
+  background-color: var(--back-light-gray);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* у меня на секшн таитл стоит другой маржин, как убрать ????????????????????????????????????*/
+.team .section-title h2 {
+  margin-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.team-list-item {
+  background-color: var(--white-text);
+  padding-bottom: 30px;
+}
+
+li.team-list-item {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team-member {
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.prof {
+  color: var(--gray-text);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.social-icons {
+  display: flex;
+  padding: 0px;
+  margin-top: 16px;
+  justify-content: space-around;
+}
+
+.social-icons a {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.social-icons a:hover {
+  background-color: var(--button-blue);
+}
+
+.social-icons a:hover svg {
+  fill: var(--back-white);
+}
+
+.social-icons svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+/* Секция клиенты!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.clients-title {
+  color: var(--black-text);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-company {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients-company-logo {
+  display: flex;
+  width: 170px;
+  height: 90px;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients-company-logo:hover {
+  /* background-color: var(--button-blue); */
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.icon {
+  fill: #afb1b8;
+  width: 42px;
+  height: 49px;
+}
+
+.clients-company-logo:hover .icon {
+  fill: var(--blue-text);
+}
+
+.button {
+  padding: 0px;
+  border: none;
+  color: inherit;
+}
+
+.button-icon {
+  width: 44px;
+  height: 44px;
+}
+
+/* футер!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.footer {
+  /* нужно прописывать ширину футера 1600????????????????????????? */
+  background-color: var(--back-dark);
+}
+
+.foot {
+  display: flex;
+  padding: 0px;
+  margin-top: 16px;
+  justify-content: space-around;
+}
+
+.foot a {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  width: 44px;
+  height: 44px;
+  padding: 0px;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.foot a:hover {
+  background-color: var(--button-blue);
+}
+
+.foot a:hover svg {
+  fill: var(--back-white);
+}
+
+.foot svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-text);
+}
+
+h3 {
+  color: var(--white-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  /* text-transform: uppercase; */
+}
+
+.cont-foot {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+  margin-right: 70px;
+}
+
+.link-adress {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  color: var(--white-text);
+}
+
+.footer span {
+  color: var(--white-text);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: 'Raleway', sans-serif;
+}
+
+.foot-style {
+  display: flex;
+  align-items: baseline;
+}
+
+.foot-social > h3 {
+  color: var(--white-text);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.address {
+  width: 231px;
+}
+
+.link-contacts {
+  display: block;
+  color: var(--white-text-op60);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 9px;
+}
+
+/* портфолио!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.page {
+  background-color: var(--back-light-white);
+  font-family: 'Roboto', sans-serif;
+}
+
+.service-nav {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  background-color: var(--back-light-gray);
+  color: var(--black-text);
+  border: none;
+  height: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--button-blue);
+  color: var(--white-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-list {
+  display: flex;
+  justify-content: space-between;
+  width: 611px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 94px;
+  margin-bottom: 34px;
+
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+.project-title {
+  font-family: Roboto;
+  color: var(--black-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.service {
+  color: var(--gray-text);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
+}
+
+.thumb {
+  padding-bottom: 94px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: teal; */
+}
+
+.flex-elements {
+  width: 380px;
+  /* background-color: tomato; */
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.flex-elements:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+/* убирает каждому третьему отступ справа */
+.flex-elements:nth-child(3n) {
+  margin-right: 0px;
+}
+
+/* убирает нижний отступ трем последним  */
+.flex-elements:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+/* альтернатива
+.flex-elements:not(:nth-child(3n)) {
+  margin: right 30px;
+} */
+/* .flex-elements:not(:nth-last-child(3n)) {
+  margin-bottom: 30px;
+} ; */
+
+.opis {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
